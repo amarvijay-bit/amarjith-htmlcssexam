@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vancover Naturopathic</title>
+    <link rel="stylesheet" href="./index.css">
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<style>
+    *{
+        font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+    }
+</style>
+</head>
+
+<body>
+    <!-- nav -->
+     <!-- <img  width="300px" src="data:image/png;base64,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" alt=""> -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+       <a class="navbar-brand me-2" href="https://static1.squarespace.com/static/6291604274bc7d0c02445423/t/629169cb9aa74d6fd5a0e29b/1681933147117/">
+        <img
+          src="https://static1.squarespace.com/static/6291604274bc7d0c02445423/t/629169cb9aa74d6fd5a0e29b/1681933147117/"
+          height="45"
+          alt="Logo"
+          loading="lazy"
+          style="margin-top: -3px;"
+        />
+      </a> 
+
+      
+    
+      
+  
+      <!-- Toggle button -->
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <!-- <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+        </ul> -->
+        <!-- Left links -->
+  
+        <div class="d-flex align-items-center">
+         <a href="" class="nav m-3 text-secondary">Home</a>
+         <a href=""  class="nav m-3 text-secondary">Treatment</a>
+         <a href=""  class="nav m-3 text-secondary">Timing</a>
+         <a href=""  class="nav m-3 text-secondary">Home</a>
+         <a href=""  class="nav m-3 text-secondary">Contact Us</a>
+         <button data-mdb-ripple-init type="button" class="btn bg-success text-light px-3 me-2">
+          BOOK NOW
+          </button>
+            
+          
+         
+          
+        </div>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+
+  <!-- image -->
+   <section id="home">
+   <img width="100%" height="500px" src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/2bfc701c-a23a-4ee1-8cd5-ae9c1aa9e12d/Homepage-edit-First-Image.jpg" alt="">
+   <div class="overlay">
+    <h1>Welcome to Vancouver <br>Naturopathic Clinic</h1>
+    <br>
+    <h5>Your holistic health partner for over 30 years</h5><br><br>
+    <button data-mdb-ripple-init type="button" class="btn bg-success text-light px-3 me-2">
+        BOOK NOW
+        </button>
+    
+
+</section>
+<div class="content">
+
+    <div class="image-container">
+        <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1655423885493-ILCGMF9ST25TS68FFC16/Our+Approach.png?format=300w" alt="Image 1">
+        <h5 class="text-center">OUR APPROACH</h5>
+      </div>
+    <div class="image-container">
+        <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1655423916624-MQXWMZ1TKVTUKJMS5U4L/Principles+of+Naturopathic+Medicine.png?format=300w" alt="Image 1">
+        <h5 class="text-center">PRINCIPLES</h5>
+      </div>
+      
+      
+      <div class="image-container">
+        <img src="https://images.squarespace-cdn.com/content/v1/6291604274bc7d0c02445423/1655423948240-NFCQ54F93YUT93O0DYKN/Health+Programs.png?format=300w" alt="Image 3">
+        <h5 class="text-center">HEALTH PROBLEMS</h5>
+      </div>
+      
+     <div>
+        
+     </div>
+</body>
+</html>
